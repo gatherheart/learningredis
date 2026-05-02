@@ -1,0 +1,95 @@
+{
+  "ui": {
+    "appName": "러스트 배우기",
+    "lessons": "레슨",
+    "quizzes": "퀴즈",
+    "check": "확인",
+    "correct": "정답!",
+    "tryAgain": "다시 시도",
+    "tryInPlayground": "플레이그라운드에서 실행",
+    "lessonNotFound": "레슨을 찾을 수 없습니다.",
+    "predictPlaceholder": "프로그램의 출력을 정확히 입력하세요...",
+    "heroTitle": "퀴즈로 러스트를 배우세요",
+    "heroBody": "짧은 레슨을 따라가며 학습합니다. 각 레슨은 실제 러스트 코드를 실행하고 출력 결과를 예측하거나 정답을 고르는 퀴즈를 제공합니다. 무료, 계정 불필요, 브라우저에서 바로.",
+    "startLearning": "시작하기",
+    "yourOrder": "나의 답",
+    "available": "선택 가능",
+    "tapItemsBelow": "아래 항목을 눌러 답을 구성하세요.",
+    "search": "레슨 검색...",
+    "theme": "테마",
+    "lessonComplete": "레슨 완료 — 모든 퀴즈를 풀었습니다!",
+    "courseComplete": "모든 레슨을 끝냈습니다. 축하합니다!",
+    "courseCompleteBadge": "전 과정 완료",
+    "keyboardHint": "팁: ↑/↓ 또는 j/k 키로 레슨 사이를 이동할 수 있습니다."
+  },
+  "topics": {
+    "basics": "기초",
+    "ownership": "소유권",
+    "closures": "클로저",
+    "iterators": "이터레이터",
+    "traits": "트레이트",
+    "generics": "제네릭",
+    "lifetimes": "라이프타임",
+    "error_handling": "에러 처리",
+    "async": "비동기",
+    "smart_pointers": "스마트 포인터",
+    "macros": "매크로",
+    "unsafe": "Unsafe"
+  },
+  "lessons": {
+    "01_hello": {
+      "title": "Hello, world!",
+      "description": "당신의 첫 러스트 프로그램입니다. println! 매크로는 표준 출력에 문자열을 출력합니다. 형식 문자열 안에서 변수를 직접 보간할 수 있습니다.",
+      "quizzes": {
+        "q1": {
+          "question": "이 프로그램은 무엇을 출력할까요? (정확한 출력을 입력하세요.)"
+        },
+        "q2": {
+          "question": "println! 은 무엇입니까?",
+          "options": [
+            "함수",
+            "매크로",
+            "트레이트",
+            "키워드"
+          ]
+        }
+      }
+    },
+    "02_variables": {
+      "title": "변수와 가변성",
+      "description": "러스트의 변수는 기본적으로 불변입니다. 재할당을 허용하려면 `mut` 키워드를 붙입니다. 컴파일러가 추론할 수 있을 때는 타입 표기를 생략할 수 있습니다.",
+      "quizzes": {
+        "q1": {
+          "question": "프로그램의 출력을 예측하세요:"
+        },
+        "q2": {
+          "question": "`let y: i32 = 10;` (mut 없음) 뒤에 추가했을 때 컴파일되는 줄은?",
+          "options": [
+            "y = y + 1;",
+            "y += 1;",
+            "let y = y + 1;",
+            "y.set(11);"
+          ]
+        }
+      }
+    },
+    "03_ownership": {
+      "title": "소유권과 빌림",
+      "description": "러스트의 모든 값에는 정확히 하나의 소유자가 있습니다. 참조(&)로 전달하면 소유권을 가져가지 않고 값을 빌립니다. 값이 이동(move)된 뒤에는 원래 바인딩을 더 이상 사용할 수 없습니다.",
+      "quizzes": {
+        "q1": {
+          "question": "프로그램의 출력을 예측하세요:"
+        },
+        "q2": {
+          "question": "`takes_ownership(owned)` 호출 후 `owned`를 다시 사용하려고 하면 어떻게 됩니까?",
+          "options": [
+            "컴파일 오류: 값이 이동됨",
+            "런타임 패닉",
+            "빈 문자열이 출력됨",
+            "정상 동작함"
+          ]
+        }
+      }
+    }
+  }
+}

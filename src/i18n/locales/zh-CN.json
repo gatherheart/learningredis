@@ -1,0 +1,55 @@
+{
+  "ui": {
+    "appName": "Rust 学习",
+    "lessons": "课程",
+    "quizzes": "测验",
+    "check": "检查",
+    "correct": "正确!",
+    "tryAgain": "再试一次",
+    "tryInPlayground": "在 Playground 试一下",
+    "lessonNotFound": "未找到课程。",
+    "predictPlaceholder": "输入程序的准确输出...",
+    "heroTitle": "通过做题学 Rust",
+    "heroBody": "通过一系列简短的课程进阶学习。每节课运行真实的 Rust 代码,并请你预测输出或选择正确答案。免费,无需账号,只需浏览器。",
+    "startLearning": "开始学习"
+  },
+  "topics": {
+    "basics": "基础",
+    "ownership": "所有权"
+  },
+  "lessons": {
+    "01_hello": {
+      "title": "Hello, world!",
+      "description": "你的第一个 Rust 程序。println! 宏向标准输出打印字符串。可以在格式化字符串中直接插入变量。",
+      "quizzes": {
+        "q1": { "question": "此程序会输出什么?(请输入精确的输出。)" },
+        "q2": {
+          "question": "println! 是什么?",
+          "options": ["函数", "宏", "trait", "关键字"]
+        }
+      }
+    },
+    "02_variables": {
+      "title": "变量与可变性",
+      "description": "Rust 的变量默认是不可变的。要允许重新赋值,加上 `mut` 关键字。当编译器能够推断时,类型注解可以省略。",
+      "quizzes": {
+        "q1": { "question": "预测程序的输出:" },
+        "q2": {
+          "question": "在 `let y: i32 = 10;`(无 mut)之后,以下哪一行能够编译通过?",
+          "options": ["y = y + 1;", "y += 1;", "let y = y + 1;", "y.set(11);"]
+        }
+      }
+    },
+    "03_ownership": {
+      "title": "所有权与借用",
+      "description": "在 Rust 中,每个值都有唯一的所有者。通过引用(&)传递值会借用它而不夺走所有权。值被 move 之后,原绑定就不能再使用。",
+      "quizzes": {
+        "q1": { "question": "预测程序的输出:" },
+        "q2": {
+          "question": "调用 `takes_ownership(owned)` 之后,再次使用 `owned` 会发生什么?",
+          "options": ["编译错误:值已被 move", "运行时 panic", "打印空字符串", "正常运行"]
+        }
+      }
+    }
+  }
+}

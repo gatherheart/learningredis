@@ -1,0 +1,55 @@
+{
+  "ui": {
+    "appName": "Rust lernen",
+    "lessons": "Lektionen",
+    "quizzes": "Quiz",
+    "check": "Prüfen",
+    "correct": "Richtig!",
+    "tryAgain": "Noch einmal",
+    "tryInPlayground": "Im Playground ausprobieren",
+    "lessonNotFound": "Lektion nicht gefunden.",
+    "predictPlaceholder": "Tippe die genaue Ausgabe des Programms...",
+    "heroTitle": "Lerne Rust durch Quiz",
+    "heroBody": "Arbeite dich durch kurze Lektionen. Jede führt echten Rust-Code aus und fragt nach der Ausgabe oder der richtigen Antwort. Kostenlos, ohne Konto, direkt im Browser.",
+    "startLearning": "Loslegen"
+  },
+  "topics": {
+    "basics": "Grundlagen",
+    "ownership": "Ownership"
+  },
+  "lessons": {
+    "01_hello": {
+      "title": "Hello, world!",
+      "description": "Dein erstes Rust-Programm. Das Makro println! gibt auf die Standardausgabe aus. Variablen können direkt im Format-String interpoliert werden.",
+      "quizzes": {
+        "q1": { "question": "Was gibt dieses Programm aus? (Gib die exakte Ausgabe ein.)" },
+        "q2": {
+          "question": "Was ist println!?",
+          "options": ["Eine Funktion", "Ein Makro", "Ein Trait", "Ein Schlüsselwort"]
+        }
+      }
+    },
+    "02_variables": {
+      "title": "Variablen und Veränderbarkeit",
+      "description": "Variablen sind in Rust standardmäßig unveränderlich. Füge `mut` hinzu, um Neuzuweisungen zu erlauben. Typannotationen sind optional, wenn der Compiler sie ableiten kann.",
+      "quizzes": {
+        "q1": { "question": "Sage die Ausgabe des Programms voraus:" },
+        "q2": {
+          "question": "Welche Zeile würde nach `let y: i32 = 10;` (ohne mut) noch compilen?",
+          "options": ["y = y + 1;", "y += 1;", "let y = y + 1;", "y.set(11);"]
+        }
+      }
+    },
+    "03_ownership": {
+      "title": "Ownership und Borrowing",
+      "description": "Jeder Wert in Rust hat genau einen Besitzer. Per Referenz (&) zu übergeben bedeutet, den Wert auszuleihen, ohne den Besitz zu übernehmen. Nachdem ein Wert verschoben wurde (move), kann die ursprüngliche Bindung nicht mehr verwendet werden.",
+      "quizzes": {
+        "q1": { "question": "Sage die Ausgabe des Programms voraus:" },
+        "q2": {
+          "question": "Was passiert nach `takes_ownership(owned)`, wenn man `owned` erneut verwenden möchte?",
+          "options": ["Compile-Fehler: Wert verschoben", "Runtime-Panic", "Gibt einen leeren String aus", "Funktioniert problemlos"]
+        }
+      }
+    }
+  }
+}

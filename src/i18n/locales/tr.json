@@ -1,0 +1,55 @@
+{
+  "ui": {
+    "appName": "Rust Öğren",
+    "lessons": "Dersler",
+    "quizzes": "Sorular",
+    "check": "Kontrol et",
+    "correct": "Doğru!",
+    "tryAgain": "Tekrar dene",
+    "tryInPlayground": "Playground'da dene",
+    "lessonNotFound": "Ders bulunamadı.",
+    "predictPlaceholder": "Programın çıktısını tam olarak yaz...",
+    "heroTitle": "Soru çözerek Rust öğren",
+    "heroBody": "Kısa derslerle ilerle. Her ders gerçek Rust kodunu çalıştırır ve senden çıktısını tahmin etmeni veya doğru cevabı seçmeni ister. Ücretsiz, hesap gerekmez, doğrudan tarayıcıda.",
+    "startLearning": "Öğrenmeye başla"
+  },
+  "topics": {
+    "basics": "Temeller",
+    "ownership": "Ownership"
+  },
+  "lessons": {
+    "01_hello": {
+      "title": "Merhaba, dünya!",
+      "description": "İlk Rust programın. println! makrosu standart çıktıya yazdırır. Değişkenleri doğrudan format string içine yerleştirebilirsin.",
+      "quizzes": {
+        "q1": { "question": "Bu program ne yazdırır? (Çıktıyı aynen yaz.)" },
+        "q2": {
+          "question": "println! nedir?",
+          "options": ["Bir fonksiyon", "Bir makro", "Bir trait", "Bir anahtar kelime"]
+        }
+      }
+    },
+    "02_variables": {
+      "title": "Değişkenler ve değişebilirlik",
+      "description": "Rust'ta değişkenler varsayılan olarak değişmezdir. Yeniden atamaya izin vermek için `mut` ekleyin. Tip belirtimi, derleyicinin çıkarsayabildiği durumlarda isteğe bağlıdır.",
+      "quizzes": {
+        "q1": { "question": "Programın çıktısını tahmin et:" },
+        "q2": {
+          "question": "`let y: i32 = 10;` (mut yok) satırından sonra eklenseydi, hangi satır derlenirdi?",
+          "options": ["y = y + 1;", "y += 1;", "let y = y + 1;", "y.set(11);"]
+        }
+      }
+    },
+    "03_ownership": {
+      "title": "Ownership ve borrowing",
+      "description": "Rust'ta her değerin tam olarak bir sahibi vardır. Bir değeri referans (&) ile geçmek, sahipliği almadan onu ödünç almaktır. Bir değer taşındıktan (move) sonra orijinal bağ artık kullanılamaz.",
+      "quizzes": {
+        "q1": { "question": "Programın çıktısını tahmin et:" },
+        "q2": {
+          "question": "`takes_ownership(owned)` çağrıldıktan sonra `owned` tekrar kullanılmaya çalışılırsa ne olur?",
+          "options": ["Derleme hatası: değer taşındı", "Çalışma zamanı panic'i", "Boş string yazdırır", "Sorunsuz çalışır"]
+        }
+      }
+    }
+  }
+}

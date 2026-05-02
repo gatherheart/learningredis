@@ -1,0 +1,55 @@
+{
+  "ui": {
+    "appName": "Học Rust",
+    "lessons": "Bài học",
+    "quizzes": "Câu đố",
+    "check": "Kiểm tra",
+    "correct": "Đúng rồi!",
+    "tryAgain": "Thử lại",
+    "tryInPlayground": "Thử trên Playground",
+    "lessonNotFound": "Không tìm thấy bài học.",
+    "predictPlaceholder": "Nhập kết quả output chính xác của chương trình...",
+    "heroTitle": "Học Rust qua những câu đố",
+    "heroBody": "Đi qua từng bài học ngắn. Mỗi bài chạy code Rust thật và yêu cầu bạn đoán output hoặc chọn đáp án đúng. Miễn phí, không cần tài khoản, ngay trên trình duyệt.",
+    "startLearning": "Bắt đầu học"
+  },
+  "topics": {
+    "basics": "Cơ bản",
+    "ownership": "Ownership"
+  },
+  "lessons": {
+    "01_hello": {
+      "title": "Hello, world!",
+      "description": "Chương trình Rust đầu tiên của bạn. Macro println! in ra standard output. Bạn có thể chèn biến trực tiếp vào trong format string.",
+      "quizzes": {
+        "q1": { "question": "Chương trình này in ra gì? (Hãy nhập output chính xác.)" },
+        "q2": {
+          "question": "println! là gì?",
+          "options": ["Một hàm", "Một macro", "Một trait", "Một từ khóa"]
+        }
+      }
+    },
+    "02_variables": {
+      "title": "Biến và tính có thể thay đổi",
+      "description": "Trong Rust, biến mặc định là bất biến. Thêm `mut` để cho phép gán lại. Việc khai báo kiểu là không bắt buộc khi trình biên dịch có thể suy luận.",
+      "quizzes": {
+        "q1": { "question": "Hãy đoán output của chương trình:" },
+        "q2": {
+          "question": "Sau `let y: i32 = 10;` (không có mut), dòng nào sẽ vẫn biên dịch được nếu thêm vào sau đó?",
+          "options": ["y = y + 1;", "y += 1;", "let y = y + 1;", "y.set(11);"]
+        }
+      }
+    },
+    "03_ownership": {
+      "title": "Ownership và borrowing",
+      "description": "Mỗi giá trị trong Rust có đúng một chủ sở hữu. Truyền giá trị qua reference (&) là mượn nó mà không lấy ownership. Khi một giá trị đã được move, binding gốc không còn dùng được nữa.",
+      "quizzes": {
+        "q1": { "question": "Hãy đoán output của chương trình:" },
+        "q2": {
+          "question": "Sau khi gọi `takes_ownership(owned)`, điều gì xảy ra nếu thử dùng `owned` lần nữa?",
+          "options": ["Lỗi biên dịch: giá trị đã được move", "Panic lúc chạy", "In ra chuỗi rỗng", "Vẫn chạy bình thường"]
+        }
+      }
+    }
+  }
+}

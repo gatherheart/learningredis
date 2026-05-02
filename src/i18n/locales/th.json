@@ -1,0 +1,55 @@
+{
+  "ui": {
+    "appName": "เรียน Rust",
+    "lessons": "บทเรียน",
+    "quizzes": "ข้อสอบ",
+    "check": "ตรวจ",
+    "correct": "ถูกต้อง!",
+    "tryAgain": "ลองใหม่",
+    "tryInPlayground": "ลองใน Playground",
+    "lessonNotFound": "ไม่พบบทเรียน",
+    "predictPlaceholder": "พิมพ์ output ของโปรแกรมให้ตรงเป๊ะ...",
+    "heroTitle": "เรียน Rust ผ่านการทำข้อสอบ",
+    "heroBody": "ค่อย ๆ ผ่านบทเรียนสั้น ๆ ทีละบท แต่ละบทรันโค้ด Rust ของจริงแล้วให้คุณทายผลลัพธ์หรือเลือกคำตอบที่ถูกต้อง ฟรี ไม่ต้องสมัคร ใช้แค่เบราว์เซอร์",
+    "startLearning": "เริ่มเรียน"
+  },
+  "topics": {
+    "basics": "พื้นฐาน",
+    "ownership": "Ownership"
+  },
+  "lessons": {
+    "01_hello": {
+      "title": "Hello, world!",
+      "description": "โปรแกรม Rust ตัวแรกของคุณ มาโคร println! พิมพ์ออกทาง standard output คุณสามารถแทรกตัวแปรลงใน format string ได้โดยตรง",
+      "quizzes": {
+        "q1": { "question": "โปรแกรมนี้พิมพ์อะไร? (พิมพ์ output แบบเป๊ะ)" },
+        "q2": {
+          "question": "println! คืออะไร?",
+          "options": ["ฟังก์ชัน", "มาโคร", "trait", "คีย์เวิร์ด"]
+        }
+      }
+    },
+    "02_variables": {
+      "title": "ตัวแปรและการเปลี่ยนค่า",
+      "description": "ใน Rust ตัวแปรเป็น immutable โดยปริยาย ใส่ `mut` เพื่ออนุญาตให้กำหนดค่าใหม่ได้ การประกาศชนิดของข้อมูลไม่บังคับ ถ้าคอมไพเลอร์อนุมานได้",
+      "quizzes": {
+        "q1": { "question": "ทาย output ของโปรแกรม:" },
+        "q2": {
+          "question": "หลังจาก `let y: i32 = 10;` (ไม่มี mut) ถ้าเขียนบรรทัดไหนต่อจึงจะคอมไพล์ผ่าน?",
+          "options": ["y = y + 1;", "y += 1;", "let y = y + 1;", "y.set(11);"]
+        }
+      }
+    },
+    "03_ownership": {
+      "title": "Ownership และ borrowing",
+      "description": "ทุกค่าใน Rust มี owner คนเดียวเท่านั้น การส่งผ่าน reference (&) คือการยืมโดยไม่เอา ownership หลังจากค่าถูก move ไปแล้ว binding เดิมจะใช้ต่อไม่ได้",
+      "quizzes": {
+        "q1": { "question": "ทาย output ของโปรแกรม:" },
+        "q2": {
+          "question": "หลังเรียก `takes_ownership(owned)` แล้ว ถ้าจะใช้ `owned` อีกครั้งจะเกิดอะไรขึ้น?",
+          "options": ["คอมไพล์ผิดพลาด: value ถูก move", "panic ตอนรันไทม์", "พิมพ์สตริงว่าง", "ทำงานปกติ"]
+        }
+      }
+    }
+  }
+}

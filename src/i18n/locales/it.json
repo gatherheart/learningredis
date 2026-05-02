@@ -1,0 +1,55 @@
+{
+  "ui": {
+    "appName": "Imparare Rust",
+    "lessons": "Lezioni",
+    "quizzes": "Quiz",
+    "check": "Verifica",
+    "correct": "Corretto!",
+    "tryAgain": "Riprova",
+    "tryInPlayground": "Prova nel Playground",
+    "lessonNotFound": "Lezione non trovata.",
+    "predictPlaceholder": "Scrivi l'output esatto del programma...",
+    "heroTitle": "Impara Rust risolvendo quiz",
+    "heroBody": "Procedi attraverso lezioni brevi. Ognuna esegue del codice Rust reale e ti chiede di prevederne l'output o scegliere la risposta corretta. Gratis, senza account, nel tuo browser.",
+    "startLearning": "Inizia"
+  },
+  "topics": {
+    "basics": "Fondamenti",
+    "ownership": "Ownership"
+  },
+  "lessons": {
+    "01_hello": {
+      "title": "Hello, world!",
+      "description": "Il tuo primo programma Rust. La macro println! scrive sullo standard output. Puoi interpolare le variabili direttamente nella stringa di formato.",
+      "quizzes": {
+        "q1": { "question": "Cosa stampa questo programma? (Scrivi l'output esatto.)" },
+        "q2": {
+          "question": "Cos'è println!?",
+          "options": ["Una funzione", "Una macro", "Un trait", "Una parola chiave"]
+        }
+      }
+    },
+    "02_variables": {
+      "title": "Variabili e mutabilità",
+      "description": "In Rust le variabili sono immutabili di default. Usa `mut` per permettere riassegnazioni. L'annotazione di tipo è opzionale quando il compilatore può inferirla.",
+      "quizzes": {
+        "q1": { "question": "Prevedi l'output del programma:" },
+        "q2": {
+          "question": "Dopo `let y: i32 = 10;` (senza mut), quale riga compilerebbe se aggiunta in seguito?",
+          "options": ["y = y + 1;", "y += 1;", "let y = y + 1;", "y.set(11);"]
+        }
+      }
+    },
+    "03_ownership": {
+      "title": "Ownership e borrowing",
+      "description": "In Rust ogni valore ha esattamente un proprietario. Passare un valore per riferimento (&) significa prenderlo in prestito senza acquisirne l'ownership. Dopo che un valore è stato spostato (move), il binding originale non è più utilizzabile.",
+      "quizzes": {
+        "q1": { "question": "Prevedi l'output del programma:" },
+        "q2": {
+          "question": "Dopo aver chiamato `takes_ownership(owned)`, cosa succede se proviamo a usare `owned` di nuovo?",
+          "options": ["Errore di compilazione: valore spostato", "Panic a runtime", "Stampa una stringa vuota", "Funziona regolarmente"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "ui": {
+    "appName": "Rust 学習",
+    "lessons": "レッスン",
+    "quizzes": "クイズ",
+    "check": "確認",
+    "correct": "正解!",
+    "tryAgain": "もう一度",
+    "tryInPlayground": "Playground で試す",
+    "lessonNotFound": "レッスンが見つかりません。",
+    "predictPlaceholder": "プログラムの正確な出力を入力...",
+    "heroTitle": "クイズで Rust を学ぶ",
+    "heroBody": "短いレッスンを順に解いていきます。各レッスンは実際の Rust コードを実行し、出力を予測したり正解を選んだりするクイズを出題します。無料、アカウント不要、ブラウザだけで完結。",
+    "startLearning": "学習を始める"
+  },
+  "topics": {
+    "basics": "基礎",
+    "ownership": "所有権"
+  },
+  "lessons": {
+    "01_hello": {
+      "title": "Hello, world!",
+      "description": "あなたの最初の Rust プログラム。println! マクロは標準出力に文字列を出力します。フォーマット文字列の中に変数を直接埋め込むことができます。",
+      "quizzes": {
+        "q1": { "question": "このプログラムは何を出力しますか? (出力を正確に入力してください。)" },
+        "q2": {
+          "question": "println! とは何ですか?",
+          "options": ["関数", "マクロ", "トレイト", "キーワード"]
+        }
+      }
+    },
+    "02_variables": {
+      "title": "変数と可変性",
+      "description": "Rust の変数はデフォルトで不変です。再代入を許可するには `mut` を付けます。コンパイラが推論できる場合、型注釈は省略できます。",
+      "quizzes": {
+        "q1": { "question": "プログラムの出力を予測してください:" },
+        "q2": {
+          "question": "`let y: i32 = 10;` (mut なし) の後に追加した場合、コンパイルが通る行はどれですか?",
+          "options": ["y = y + 1;", "y += 1;", "let y = y + 1;", "y.set(11);"]
+        }
+      }
+    },
+    "03_ownership": {
+      "title": "所有権と借用",
+      "description": "Rust のすべての値には正確に 1 つの所有者があります。参照(&)で渡すと所有権を奪わずに値を借用します。値が move された後は、元のバインディングは使えなくなります。",
+      "quizzes": {
+        "q1": { "question": "プログラムの出力を予測してください:" },
+        "q2": {
+          "question": "`takes_ownership(owned)` の呼び出し後、`owned` を再び使おうとするとどうなりますか?",
+          "options": ["コンパイルエラー: 値が move されました", "ランタイムパニック", "空文字列が出力される", "正常に動作する"]
+        }
+      }
+    }
+  }
+}

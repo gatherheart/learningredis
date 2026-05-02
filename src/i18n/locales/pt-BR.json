@@ -1,0 +1,55 @@
+{
+  "ui": {
+    "appName": "Aprender Rust",
+    "lessons": "Lições",
+    "quizzes": "Questões",
+    "check": "Verificar",
+    "correct": "Correto!",
+    "tryAgain": "Tentar de novo",
+    "tryInPlayground": "Testar no Playground",
+    "lessonNotFound": "Lição não encontrada.",
+    "predictPlaceholder": "Digite a saída exata do programa...",
+    "heroTitle": "Aprenda Rust resolvendo questões",
+    "heroBody": "Avance por lições curtas. Cada uma executa código Rust real e pede para você prever a saída ou escolher a resposta correta. Grátis, sem conta, no navegador.",
+    "startLearning": "Começar"
+  },
+  "topics": {
+    "basics": "Básico",
+    "ownership": "Ownership"
+  },
+  "lessons": {
+    "01_hello": {
+      "title": "Olá, mundo!",
+      "description": "Seu primeiro programa em Rust. A macro println! escreve na saída padrão. Você pode interpolar variáveis direto na string de formato.",
+      "quizzes": {
+        "q1": { "question": "O que esse programa imprime? (Digite a saída exata.)" },
+        "q2": {
+          "question": "O que é println!?",
+          "options": ["Uma função", "Uma macro", "Um trait", "Uma palavra-chave"]
+        }
+      }
+    },
+    "02_variables": {
+      "title": "Variáveis e mutabilidade",
+      "description": "Em Rust, variáveis são imutáveis por padrão. Use `mut` para permitir reatribuição. Anotação de tipo é opcional quando o compilador consegue inferir.",
+      "quizzes": {
+        "q1": { "question": "Preveja a saída do programa:" },
+        "q2": {
+          "question": "Após `let y: i32 = 10;` (sem mut), qual linha compilaria se adicionada em seguida?",
+          "options": ["y = y + 1;", "y += 1;", "let y = y + 1;", "y.set(11);"]
+        }
+      }
+    },
+    "03_ownership": {
+      "title": "Ownership e borrowing",
+      "description": "Em Rust, todo valor tem exatamente um dono. Passar por referência (&) é emprestar sem assumir ownership. Depois que um valor é movido, o binding original não pode mais ser usado.",
+      "quizzes": {
+        "q1": { "question": "Preveja a saída do programa:" },
+        "q2": {
+          "question": "Após chamar `takes_ownership(owned)`, o que acontece se tentarmos usar `owned` de novo?",
+          "options": ["Erro de compilação: valor movido", "Panic em runtime", "Imprime string vazia", "Funciona normalmente"]
+        }
+      }
+    }
+  }
+}

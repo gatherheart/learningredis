@@ -1,0 +1,20 @@
+[package]
+name = "learningrust-lessons"
+version = "0.0.0"
+edition = "2021"
+publish = false
+
+# Each file in src/bin/ is automatically discovered as a separate binary.
+# To add a lesson, drop a new file like src/bin/04_slugname.rs and add an
+# entry to lessons/meta.json with a matching `bin` field.
+
+[dependencies]
+# Tiny blocking executor used by the async-basics lesson so the binary
+# can actually print a result deterministically at build time.
+pollster = "0.3"
+
+[profile.release]
+opt-level = 0
+debug = false
+lto = false
+incremental = true

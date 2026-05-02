@@ -1,0 +1,55 @@
+{
+  "ui": {
+    "appName": "Apprendre Rust",
+    "lessons": "Leçons",
+    "quizzes": "Questions",
+    "check": "Vérifier",
+    "correct": "Correct !",
+    "tryAgain": "Réessayer",
+    "tryInPlayground": "Essayer dans Playground",
+    "lessonNotFound": "Leçon introuvable.",
+    "predictPlaceholder": "Saisissez la sortie exacte du programme...",
+    "heroTitle": "Apprenez Rust en résolvant des quiz",
+    "heroBody": "Avancez à travers de courtes leçons. Chacune exécute du vrai code Rust et vous demande de prédire sa sortie ou de choisir la bonne réponse. Gratuit, sans compte, dans votre navigateur.",
+    "startLearning": "Commencer"
+  },
+  "topics": {
+    "basics": "Bases",
+    "ownership": "Ownership"
+  },
+  "lessons": {
+    "01_hello": {
+      "title": "Hello, world !",
+      "description": "Votre premier programme Rust. La macro println! écrit sur la sortie standard. Vous pouvez interpoler des variables directement dans la chaîne de format.",
+      "quizzes": {
+        "q1": { "question": "Que va imprimer ce programme ? (Saisissez la sortie exacte.)" },
+        "q2": {
+          "question": "Qu'est-ce que println! ?",
+          "options": ["Une fonction", "Une macro", "Un trait", "Un mot-clé"]
+        }
+      }
+    },
+    "02_variables": {
+      "title": "Variables et mutabilité",
+      "description": "En Rust, les variables sont immuables par défaut. Ajoutez `mut` pour permettre la réaffectation. L'annotation de type est facultative lorsque le compilateur peut l'inférer.",
+      "quizzes": {
+        "q1": { "question": "Prédisez la sortie du programme :" },
+        "q2": {
+          "question": "Après `let y: i32 = 10;` (sans mut), quelle ligne compilerait si on l'ajoutait ensuite ?",
+          "options": ["y = y + 1;", "y += 1;", "let y = y + 1;", "y.set(11);"]
+        }
+      }
+    },
+    "03_ownership": {
+      "title": "Ownership et borrowing",
+      "description": "Chaque valeur en Rust a exactement un propriétaire. Passer une valeur par référence (&) revient à l'emprunter sans en prendre l'ownership. Une fois la valeur déplacée (move), la liaison d'origine ne peut plus être utilisée.",
+      "quizzes": {
+        "q1": { "question": "Prédisez la sortie du programme :" },
+        "q2": {
+          "question": "Après l'appel à `takes_ownership(owned)`, que se passe-t-il si l'on essaie d'utiliser `owned` à nouveau ?",
+          "options": ["Erreur de compilation : valeur déplacée", "Panique à l'exécution", "Affiche une chaîne vide", "Fonctionne sans problème"]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "ui": {
+    "appName": "Aprende Rust",
+    "lessons": "Lecciones",
+    "quizzes": "Cuestionarios",
+    "check": "Comprobar",
+    "correct": "¡Correcto!",
+    "tryAgain": "Inténtalo de nuevo",
+    "tryInPlayground": "Probar en Playground",
+    "lessonNotFound": "Lección no encontrada.",
+    "predictPlaceholder": "Escribe la salida exacta del programa...",
+    "heroTitle": "Aprende Rust resolviendo cuestionarios",
+    "heroBody": "Avanza con lecciones cortas. Cada una ejecuta código Rust real y te pide predecir su salida o elegir la respuesta correcta. Gratis, sin cuenta, en tu navegador.",
+    "startLearning": "Empezar"
+  },
+  "topics": {
+    "basics": "Conceptos básicos",
+    "ownership": "Ownership"
+  },
+  "lessons": {
+    "01_hello": {
+      "title": "¡Hola, mundo!",
+      "description": "Tu primer programa en Rust. La macro println! imprime en la salida estándar. Puedes interpolar variables directamente dentro de la cadena de formato.",
+      "quizzes": {
+        "q1": { "question": "¿Qué imprime este programa? (Escribe la salida exacta.)" },
+        "q2": {
+          "question": "¿Qué es println!?",
+          "options": ["Una función", "Una macro", "Un trait", "Una palabra clave"]
+        }
+      }
+    },
+    "02_variables": {
+      "title": "Variables y mutabilidad",
+      "description": "Las variables en Rust son inmutables por defecto. Añade `mut` para permitir reasignaciones. La anotación de tipo es opcional cuando el compilador puede inferirlo.",
+      "quizzes": {
+        "q1": { "question": "Predice la salida del programa:" },
+        "q2": {
+          "question": "Tras `let y: i32 = 10;` (sin mut), ¿qué línea sí compilaría si se añade después?",
+          "options": ["y = y + 1;", "y += 1;", "let y = y + 1;", "y.set(11);"]
+        }
+      }
+    },
+    "03_ownership": {
+      "title": "Ownership y borrowing",
+      "description": "Cada valor en Rust tiene exactamente un dueño. Pasar el valor por referencia (&) lo presta sin tomar el ownership. Una vez que un valor ha sido movido, no se puede usar el binding original.",
+      "quizzes": {
+        "q1": { "question": "Predice la salida del programa:" },
+        "q2": {
+          "question": "Tras llamar `takes_ownership(owned)`, ¿qué ocurre si se intenta usar `owned` de nuevo?",
+          "options": ["Error de compilación: valor movido", "Pánico en tiempo de ejecución", "Imprime cadena vacía", "Funciona bien"]
+        }
+      }
+    }
+  }
+}

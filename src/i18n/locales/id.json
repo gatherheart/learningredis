@@ -1,0 +1,55 @@
+{
+  "ui": {
+    "appName": "Belajar Rust",
+    "lessons": "Pelajaran",
+    "quizzes": "Kuis",
+    "check": "Periksa",
+    "correct": "Benar!",
+    "tryAgain": "Coba lagi",
+    "tryInPlayground": "Coba di Playground",
+    "lessonNotFound": "Pelajaran tidak ditemukan.",
+    "predictPlaceholder": "Ketik output program secara persis...",
+    "heroTitle": "Belajar Rust dengan kuis",
+    "heroBody": "Lalui pelajaran-pelajaran singkat. Setiap pelajaran menjalankan kode Rust nyata dan memintamu memprediksi output atau memilih jawaban yang benar. Gratis, tanpa akun, langsung di browser.",
+    "startLearning": "Mulai belajar"
+  },
+  "topics": {
+    "basics": "Dasar",
+    "ownership": "Ownership"
+  },
+  "lessons": {
+    "01_hello": {
+      "title": "Halo, dunia!",
+      "description": "Program Rust pertamamu. Makro println! mencetak ke standard output. Kamu bisa menyisipkan variabel langsung di dalam format string.",
+      "quizzes": {
+        "q1": { "question": "Apa yang dicetak program ini? (Ketik output persisnya.)" },
+        "q2": {
+          "question": "Apa itu println!?",
+          "options": ["Fungsi", "Makro", "Trait", "Kata kunci"]
+        }
+      }
+    },
+    "02_variables": {
+      "title": "Variabel dan mutability",
+      "description": "Di Rust, variabel bersifat immutable secara default. Tambahkan `mut` untuk mengizinkan reassignment. Anotasi tipe bisa dihilangkan saat compiler bisa menyimpulkannya.",
+      "quizzes": {
+        "q1": { "question": "Prediksi output program:" },
+        "q2": {
+          "question": "Setelah `let y: i32 = 10;` (tanpa mut), baris mana yang akan tetap compile?",
+          "options": ["y = y + 1;", "y += 1;", "let y = y + 1;", "y.set(11);"]
+        }
+      }
+    },
+    "03_ownership": {
+      "title": "Ownership dan borrowing",
+      "description": "Setiap nilai di Rust memiliki tepat satu owner. Mengoper nilai lewat reference (&) berarti meminjamnya tanpa mengambil ownership. Setelah sebuah nilai dipindahkan (move), binding aslinya tidak bisa digunakan lagi.",
+      "quizzes": {
+        "q1": { "question": "Prediksi output program:" },
+        "q2": {
+          "question": "Setelah memanggil `takes_ownership(owned)`, apa yang terjadi bila mencoba memakai `owned` lagi?",
+          "options": ["Compile error: value moved", "Runtime panic", "Mencetak string kosong", "Berjalan normal"]
+        }
+      }
+    }
+  }
+}
