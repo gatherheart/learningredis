@@ -56,7 +56,7 @@ export function Home({ lessons }: Props) {
               <div><span className="text-emerald-300">$</span> redis-cli --mission {nextLesson.id}</div>
               <div className="text-zinc-500">next track: {nextLesson.topic}</div>
               <div className="text-cyan-200">Every lesson animates how your commands change Redis data structures.</div>
-              <div className="text-zinc-500">The later tracks cover TTLs, transactions, streams, and architecture tradeoffs.</div>
+              <div className="text-zinc-500">The later tracks cover invalidation, optimistic locking, streams, and architecture tradeoffs.</div>
             </div>
           </div>
         </section>
